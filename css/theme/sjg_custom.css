@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: 'Raleway SemiBold';
-  src: url('fonts/raleway/Raleway-SemiBold.ttf')  format('truetype');
+  src: url('./fonts/raleway/Raleway-SemiBold.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/raleway/Raleway-Medium.ttf')  format('truetype');
+  src: url('./fonts/raleway/Raleway-Medium.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: 'Arvo';
-  src: url('fonts/arvo/Arvo-Regular.ttf')  format('truetype');
+  src: url('./fonts/arvo/Arvo-Regular.ttf')  format('truetype');
 }
 
 /**
@@ -447,7 +447,10 @@ html.tertiary blockquote {
   text-shadow: .02em .02em .02em rgba(.7,.7,.7,0.8);
 }
 
-
 html caption {
   text-align: right;
+}
+
+blockquote {
+ text-align: left; 
 }

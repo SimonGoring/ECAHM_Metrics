@@ -7,9 +7,10 @@
 		<title>Interdisciplinary Collaboration</title>
 		<meta name="author" content="Simon Goring">
 		<meta name="description" content="Measuring Transformation Requires New Metrics">
-		<meta name="keywords" content="EarthCube, ">
+		<meta name="keywords" content="EarthCube">
 
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/d3_fcv.css">
 		<link rel="stylesheet" href="css/theme/sjg_custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -23,6 +24,20 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+
+		<style>
+		.links line {
+		  stroke-opacity: 0.6;
+		  filter: drop-shadow( 3px 3px 2px rgba(0,0,0,0.3) );
+		}
+		.nodes circle {
+		  stroke: rgba(255,255,255,0.6);
+		  stroke-width: 1.5px;
+		  filter: drop-shadow( 3px 3px 2px rgba(0,0,0,0.3) );
+		}
+		</style>
+
 	</head>
 	<body>
 		<div class="reveal">
@@ -30,50 +45,184 @@
 				<section>
 					<h1>EarthCube Metrics</h1>
 					<h2>Key Considerations</h2>
-					<div>
-						<br><p>Simon James Goring</p><br><br>
-					</div>
+					<br>
+					<br>
 					<div style="background: rgba(200, 200, 200, 0.4) ; box-shadow:  2px 2px #3F3931;">
 						<img src="images/Packrat.svg" height=80px/>   
-						<img src="images/UW-Madison_logo.svg" height=80px/>   
+						<img src="images/UW-Madison_logo.svg" height=80px/>
 						<img src="images/logo_earthcube_full_horizontal.png" height=80px/>
+						<img src="images/nsf4.png" height=80px/>
 					</div>
 				</section>
+				<section>
+					<img src='images/important_metrics.png' height=600px>
+				</section>
 				<section id='earthcube-is-different'>
-					<section>Production vs Transformation</section>
+					<section>
+						<h1>Production vs Transformation</h1>
+						<div width=100%>
+							<img src='images/noun_988545_cc.svg' height=300px align='left'>
+							<img src='images/noun_1470271_cc.svg' height=300px align='right'>
+						</div>
+						<span hidden="true">How do we summarize the successes of a program that does not seek to only push knowledge forward, but to fundamentally restructure the way we do science in this new century?</span>
+					</section>
+					<section>
+						<h1>What is Success?</h1>
+						<div><img src='images/noun_882868_cc.svg' height=300px></div>
+					</section>
 					<section id='annual-report'>
-						<ul>
-							<li>What is the impact on the development of the principal discipline(s) of the project?</li>
-							<li>What is the impact on other disciplines?</li>
-							<li>What is the impact on the development of human resources?</li>
-							<li>What is the impact on physical resources that form infrastructure?</li>
-							<li>What is the impact on institutional resources that form infrastructure?</li>
-							<li>What is the impact on information resources that form infrastructure?</li>
-							<li>What is the impact on technology transfer?</li>
-							<li>What is the impact on society beyond science and technology?</li>
+						<h1>NSF Annual Reporting</h1>
+						<ul id="buttons">
+							<li>Principal discipline</li>
+							<li>Other disciplines</li>
+							<li>Human resource development</li>
+							<li>Physical infrastructure</li>
+							<li>Institutional resources</li>
+							<li>Information resources</li>
+							<li>Technology transfer</li>
+							<li>Societal impacts</li>
+						</ul>
+					</section>
+					<section id="new-metrics">
+						<h1>EarthCube Metric Outline</h1>
+						<a href='http://bit.ly/ec_metrics'>http://bit.ly/ec_metrics</a>
+						<ul id = "buttons">
+							<li>Disciplinary Leadership</li>
+							<li>Academic Leadership</li>
+							<li>Policy and Management Outcomes</li>
+							<li>Funding Success</li>
+							<li>Partner Brokering</li>
+							<li>Interdisciplinary Brokering</li>
+							<li>Mentoring and Training</li>
+							<li>Public Outreach</li>
+							<li>Knowledge Generation</li>
+							<li>Data and Product Creation</li>
+						</ul>
+					</section>
+					<section id='d3-graph'>
+						<h1>Equivalence and Difference</h1>
+						<svg width=600 height=600>
+					</section>
+				</section>
+				<section id='gathering-metrics'>
+					<section>
+						<h1>Gathering Metrics</h1>
+						<img src='images/throughput.svg' height=200>
+					</section>
+					<section id="exploding-metrics">
+						<img src='images/BroaderDiagram.svg' height='90%'>
+					</section>
+					<section id ='collecting-reports'>
+						<h1>Survey Monkey Survey</h1>
+						<img src='images/noun_52479_cc.svg' height=300px>
+					</section>
+					<section id='parsing-reports'>
+						<img src='images/Yaml_logo.png'><br>
+						<strong><code>yaml</code></strong> to parse report elements
+					</section>
+				</section>
+				<section id='preliminary-results'>
+					<section>
+						<h1>Preliminary Results</h1>
+						<img src='images/noun_688819_cc.svg' height=300>
+					</section>
+					<section>
+						<h1>Funding</h1>
+						<img src='images/AverageIncrease.svg'>
+						<p><strong>Funding increases 33% following 1st EC award</strong>
+					</section>
+					<section>
+						<h1>Collaboration</h1>
+						<ul id="buttons">
+							<li>Directorate for Computer & Information Science & Engineering</li>
+							<li>Directorate for Mathematical & Physical Sciences</li>
+							<li>Directorate For Geosciences</li>
+							<li>Directorate For Education and Human Resources</li>
+							<li>Directorate for Biological Sciences</li>
+							<li>Office of the Director</li>
+							<li>Directorate For Social, Behavioral & Economic Sciences</li>
+							<li>Directorate For Engineering</li>
 						</ul>
 					</section>
 					<section>
-						<ul>
-							<li>Publication Outcomes</li>
-							<li>Resources Developed</li>
-							<li>Data Standards Developed</li>
-							<li>Repositories Linked</li>
-						</ul>
-				</section>
-				<section id='validating-goals'></section>
-					<ul>
-						<li></li>
-					</ul>
-				<section id='gathering-metrics'></section>
-					<section id ='collecting-reports'>
+						<h1>Collaboration</h1>
+						<img src='images/AverageIncreaseDirect.svg'>
+						<p><strong>Avg. Number of Directorates Increases</strong></p>
+						<p>Pool of directorates does not change</p>
 					</section>
-					<section id='parsing-reports'>Using yaml</section>
-
-				<section id='preliminary-results'></section>
+					<section>
+						<h1>Collaboration</h1>
+						<p><strong>Avg. Number of Collaborators Unchanged</strong></p>
+					</section>
+					<section id='production'>
+						<h1>Production</h1>
+						<img src='images/product_graph.png' height=500>
+					</section>
+				</section>
 				<section id='future-guidance'>
 					<section id='data-access-challenges'>
-						Data is heterogeneous
+						<h1>Challenges</h1>
+					</section>
+					<section>
+						<h1>Machine Readable?</h1>
+						This:
+						<blockquote>
+							The project ran several workshops with early career students.
+						</blockquote>
+						That:
+						<blockquote>
+							The project ran five workshops over the course of the year:<br>
+							* Workshop 1: January 2017, results were published in a blog post at http://subdomain.domain.topleveldomain/filename.extension
+						</blockquote>
+					</section>
+					<section>
+						<h1>Machine Readable!</h1>
+						This:
+						<blockquote>
+							Author, A. 2017. This EarthCube project "rocks". <em>Journal of Transformative Research</em>. <b>12</b>: 12 - 43.
+						</blockquote>
+						That:
+						<blockquote>
+							Author, B. 2016. Cool science that'll make you say "geo"-Whiz!. <em>Southern Delaware Journal of Extra-Planetary Magma Physics</em>. <b>10</b>: 11 - 13.
+						</blockquote>
+						The other:
+						<blockquote>
+							Notes say that the articles can be found in the NSF PAR - https://par.nsf.gov/ but could not follow link from Annual Report.
+						</blockquote>
+					</section>
+					<section>
+						<h1>Solutions</h1>
+						Simple template examples for:
+						<br>
+						<ul id='buttons'>
+							<li>Workshops</li>
+							<li>Publications</li>
+							<li>Conference Sessions & Presentations</li>
+							<li>Mentoring & Training</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Solutions</h1>
+						More focused work on metrics and scientometrics that directly & actively engages with social scientists.
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Conclusions</h1>
+					</section>
+					<section>
+						<h1>What we are doing is hard</h1>
+						<img src='images/noun_1677688_cc.svg' height=300>
+					</section>
+					<section>
+						<h1>We Are Academics Designing Platforms</h1>
+						<iframe src="https://giphy.com/embed/udnxKUSxRRxHa" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/comics-jeremy-sengly-jeremysengly-udnxKUSxRRxHa">via GIPHY</a></p>
+					</section>
+					<section>
+						<h1>We are Succeeding</h1>
+						<br>
+						<iframe src="https://giphy.com/embed/x9DaiByijE5Ko" width="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/baby-water-drink-x9DaiByijE5Ko">via GIPHY</a></p>
+					</section>
 				</section>
 			</div>
 		</div>
@@ -93,6 +242,100 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+		</script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script>
+
+		  var svg = d3.select("svg"),
+		      width = +svg.attr("width"),
+		      height = +svg.attr("height");
+
+		  var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+		  var simulation = d3.forceSimulation()
+		      .force("link", d3.forceLink().id(function(d) { return d.id; }))
+		      .force("charge", d3.forceManyBody().strength(-300).distanceMax(600).distanceMin(100))
+		      .force("center", d3.forceCenter(width / 2, height / 2));
+
+		  d3.json("resources/metric_network.json", function(error, graph) {
+		    if (error) throw error;
+
+		    var link = svg.append("g")
+		        .attr("class", "links")
+		        .selectAll("line")
+		        .data(graph.links)
+		        .enter().append("line")
+		        .attr("stroke-width", function(d) { return 3; })
+		        .attr("stroke", function(d) { return "red"; });
+
+		    var node = svg.append("g")
+		        .attr("class", "nodes")
+		        .selectAll("circle")
+		        .data(graph.nodes)
+		        .enter().append("circle")
+		        .attr("r", function(d) { if (['NSF Reporting', 'EarthCube Reporting'].includes(d.element)) { return 25 } else {return 10;} })
+		        .attr("fill", function(d) { return color(d.source); })
+		        .call(d3.drag()
+		            .on("start", dragstarted)
+		            .on("drag", dragged)
+		            .on("end", dragended));
+
+		    node.append("title")
+		        .text(function(d) { return d.element; });
+
+		    //var label = svg.selectAll(".mytext")
+		    //                .data(graph.nodes)
+		    //                .enter()
+		    //                .append("text")
+		    //                .text(function (d) { return d.element; })
+		    //                .style("text-anchor", "middle")
+		    //                .style("fill", "rgba(255,255,255,0.8)")
+		    //                .style("font-family", "Raleway SemiBold")
+		    //                .style("font-size", 8)
+		    //                .style("filter","drop-shadow( 3px 3px 2px rgba(0,0,0,0.7) )");
+
+		    simulation
+		        .nodes(graph.nodes)
+		        .on("tick", ticked);
+
+		    simulation.force("link")
+		        .links(graph.links);
+
+			link.on("mouseover", function() { d3.select(this).style("stroke","red"); });
+			link.on("mouseout", function() { d3.select(this).style("stroke",function(d) { return color(d.value); }); });
+
+		    function ticked() {
+		      link
+		          .attr("x1", function(d) { return d.source.x; })
+		          .attr("y1", function(d) { return d.source.y; })
+		          .attr("x2", function(d) { return d.target.x; })
+		          .attr("y2", function(d) { return d.target.y; });
+
+		      node
+		          .attr("cx", function(d) { return d.x; })
+		          .attr("cy", function(d) { return d.y; });
+		      //label
+		      //    .attr("x", function(d){ return d.x; })
+		      //    .attr("y", function (d) {return d.y - 10; })
+		    }
+		  });
+
+		  function dragstarted(d) {
+		    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+		    d.fx = d.x;
+		    d.fy = d.y;
+		  }
+
+		  function dragged(d) {
+		    d.fx = d3.event.x;
+		    d.fy = d3.event.y;
+		  }
+
+		  function dragended(d) {
+		    if (!d3.event.active) simulation.alphaTarget(0);
+		    d.fx = null;
+		    d.fy = null;
+		  }
 		</script>
 	</body>
 </html>
